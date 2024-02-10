@@ -3,7 +3,7 @@ import { LuMusic4 } from "react-icons/lu";
 
 export default function Home() {
   return (
-    <div className='w-screen h-full lg:h-full 2xl:h-screen md:h-screen bg-blue-300 px-10 py-[10px] font-outfit'>
+    <div className='w-screen h-full lg:h-full 2xl:h-screen md:h-screen bg-gradient-to-br from-blue-300 to-red-300 px-10 py-[10px] font-outfit'>
       <div className="flex flex-col gap-4 lg:gap-10">
         <p className="text-3xl lg:text-6xl">Carta a minha nega</p>
         <Section />
@@ -52,7 +52,7 @@ function Button({ link, children, type }: ButtonProps){
   if (type === "ararinha"){
     return(
       <a href={link} target="_blank">
-        <div className="flex flex-row gap-5 items-center justify-center lg:justify-normal text-2xl lg:text-4xl text-neutral-50 p-5 bg-blue-400 rounded-xl hover:bg-blue-600">
+        <div className="flex flex-row gap-5 items-center justify-center lg:justify-normal text-2xl lg:text-4xl text-neutral-200 p-5 bg-blue-400/50 rounded-xl hover:bg-blue-600/50">
           <LuMusic4 />
           <p>{children}</p>
         </div>
@@ -61,7 +61,7 @@ function Button({ link, children, type }: ButtonProps){
   } else if (type === "doIWannaKnow"){
     return(
       <a href={link} target="_blank">
-        <div className="flex flex-row gap-5 items-center justify-center lg:justify-normal text-2xl lg:text-4xl text-neutral-50 p-5 bg-neutral-800 rounded-xl hover:bg-neutral-400 hover:text-neutral-700">
+        <div className="flex flex-row gap-5 items-center justify-center lg:justify-normal text-2xl lg:text-4xl text-neutral-200 p-5 bg-neutral-800/50 rounded-xl hover:bg-neutral-400/50 hover:text-neutral-700">
           <LuMusic4 />
           <p>{children}</p>
         </div>
